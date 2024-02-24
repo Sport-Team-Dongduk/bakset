@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view/>  <!-- `components/Home.vue`로 연결되는 라우터 -->
   </div>
 </template>
 

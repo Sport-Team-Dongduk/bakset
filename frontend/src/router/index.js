@@ -52,6 +52,11 @@ export default new Router({
             path: '/signup2',
             name: 'SingUp2',
             component:() => import("@/components/SignUp2")
+        },
+        {
+            path: '/questionlist',
+            name: 'QuestionList',
+            component:() => import("@/components/QuestionList")
         }
     ]
 })
