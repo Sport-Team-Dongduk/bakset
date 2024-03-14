@@ -1,12 +1,21 @@
 <template>
   <div id="app">
-    <router-view/>  <!-- `components/Home.vue`로 연결되는 라우터 -->
+    <MainMap/>
+    <SideBar class="side-bar"/>
+    <router-view/>
   </div>
 </template>
 
 <script>
+import SideBar from "@/components/SideBar"
+import MainMap from '@/components/MainMap'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    SideBar,
+    MainMap
+  }
 }
 </script>
 
@@ -18,5 +27,17 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  > .side-bar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
 }
 </style>
