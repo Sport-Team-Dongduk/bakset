@@ -23,10 +23,15 @@ export default new Router({
             name: 'HelloWorld',
             component:() => import("@/components/HelloWorld")
         },
-        {
+        /*{
             path: '/login',
             name: 'Login',
             component:() => import("@/components/Login")
+        },*/
+        {
+            path: '/login',
+            name: 'Login',
+            component:() => import("@/components/LoginForm.vue")
         },
         {
             path: '/login2',
@@ -37,6 +42,11 @@ export default new Router({
             path: '/signup',
             name: 'SignUp',
             component:() => import("@/components/SignUp")
+        },
+        {
+            path: '/signupform',
+            name: 'SignUpForm',
+            component:() => import("@/components/SignUpForm.vue")
         },
         {
             path: '/loginsuceess',
@@ -59,9 +69,9 @@ export default new Router({
             component:() => import("@/components/SignUp2")
         },
         {
-            path: '/questionlist',
-            name: 'QuestionList',
-            component:() => import("@/components/QuestionList")
+            path: '/fronttest',
+            name: 'FrontTest',
+            component:() => import("@/components/FrontTest")
         }
     ]
 })
