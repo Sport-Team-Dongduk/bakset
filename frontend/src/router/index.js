@@ -34,6 +34,11 @@ export default new Router({
             component:() => import("@/components/LoginForm.vue")
         },
         {
+            path: '/login2',
+            name: 'Login2',
+            component:() => import("@/components/Login2")
+        },
+        {
             path: '/signup',
             name: 'SignUp',
             component:() => import("@/components/SignUp")
